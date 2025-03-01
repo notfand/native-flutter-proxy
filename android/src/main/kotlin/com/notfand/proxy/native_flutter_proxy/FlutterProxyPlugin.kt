@@ -1,20 +1,20 @@
 package com.notfand.proxy.native_flutter_proxy
 
-import androidx.annotation.NonNull
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin
+import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import io.flutter.plugin.common.PluginRegistry
 
-/** NativeFlutterProxyPlugin */
-class NativeFlutterProxyPlugin: FlutterPlugin, MethodCallHandler {
+/** FlutterProxyPlugin */
+class FlutterProxyPlugin: FlutterPlugin, MethodCallHandler {
   private var mMethodChannel: MethodChannel? = null;
 
   companion object {
     @JvmStatic
-    fun registerWith(registrar: Registrar) {
+    fun registerWith(registrar: PluginRegistry.Registrar) {
       val instance = FlutterProxyPlugin()
       instance.onAttachedToEngine(registrar.messenger());
     }
