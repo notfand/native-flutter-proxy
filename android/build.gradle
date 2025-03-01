@@ -1,17 +1,15 @@
-package android
-
 group = "com.notfand.proxy.native_flutter_proxy"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    ext.kotlin_version = "2.0.20"
+    ext.kotlin_version = "1.8.22"
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.3.2")
+        classpath("com.android.tools.build:gradle:8.1.0")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
     }
 }
@@ -34,8 +32,8 @@ android {
     compileSdk = 34
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8VERSION_1_8
     }
 
     kotlinOptions {
