@@ -68,7 +68,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.20"
     implementation "org.jetbrains.kotlin:kotlin-reflect:2.0.20"
     compileOnly files("$flutterRoot/bin/cache/artifacts/engine/android-arm/flutter.jar")
-    compileOnly 'androidx.annotation:annotation:1.9.1'
+    compileOnly 'androidx.annotation:annotation:1.1.0'
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.mockito:mockito-core:5.0.0")
